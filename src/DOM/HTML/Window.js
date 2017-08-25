@@ -190,18 +190,6 @@ exports.url = function (window) {
   };
 };
 
-exports.localStorage = function (window) {
-  return function () {
-    return window.localStorage;
-  };
-};
-
-exports.sessionStorage = function (window) {
-  return function () {
-    return window.sessionStorage;
-  };
-};
-
 exports._requestAnimationFrame = function(fn) {
   return function(window) {
     return function() {
